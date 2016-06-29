@@ -8,6 +8,7 @@ uses
 
 type
   TForm1 = class(TForm)
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -20,5 +21,10 @@ var
 implementation
 
 {$R *.fmx}
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+  ShowMessage('Hello');
+end;
 
 end.
